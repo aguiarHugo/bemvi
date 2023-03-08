@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import { Navbar } from './containers/Navbar'
+import { Navbar } from './components/Navbar'
 
 import './styles/app.sass'
 
