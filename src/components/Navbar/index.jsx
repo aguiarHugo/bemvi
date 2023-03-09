@@ -3,7 +3,7 @@ import { useState } from 'react'
 import logo from '../../assets/logo.png'
 import './style.sass'
 
-import { RiCake3Line } from 'react-icons/ri'
+import { AiOutlineClose } from 'react-icons/ai'
 import { GiHamburgerMenu } from 'react-icons/gi'
 
 export function Navbar(){
@@ -14,6 +14,7 @@ export function Navbar(){
     <nav className="bemvi__navbar">
       <div className="bemvi__navbar-logo">
         <img src={logo} alt="Logo Bemvi" />
+        <h1>BemVi Confeitaria</h1>
       </div>
       <ul className='bemvi__navbar-links'>
         <li><a href="#home">Home</a></li>
@@ -33,7 +34,7 @@ export function Navbar(){
       
       {toggleMenu && (
         <div className="bemvi__navbar-smallscreen_overlay">
-          <RiCake3Line
+          <AiOutlineClose
             className='overlay__close'
             color='#FFF' 
             fontSize={27} 
